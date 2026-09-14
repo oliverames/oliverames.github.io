@@ -282,28 +282,9 @@ hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
                  sparkle:edSignature="/GEjbRq53NvpVXkdg7byLc+xq78ST84fgy1BuDp8/R6u1MtxX5VMb8okowtYbNn3lgF21+wHdW2gZoOx1p19Dg==" />
       <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
     </item>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <!-- `Scripts/release.sh appcast` prepends signed release entries here. -->
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: dDU6WQk7aOcnJXr4iHeWGxpKAxTwmSjptb7cDjlfeUmOd+xeOIqphO3ef0Z8DVYM3MK+a6OWNYM71vVyRf/dDQ==
-length: 14543
+edSignature: sZzyERCOlHPrCha3kDGz7cbb9pmF80hhaHUNtKpMx9pYNB4rhkEkv7BOSeG50/o7Jr5ID7EcW5Z7/RgqLA1zAw==
+length: 14448
 -->
