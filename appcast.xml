@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Apple Core Updates</title>
+    <link>https://applecore.app/appcast.xml</link>
+    <description>Updates for Apple Core - a native macOS MCP server for Apple services</description>
+    <language>en</language>
+    <item>
+      <title>Version 1.7.3</title>
+      <link>https://applecore.app/</link>
+      <sparkle:informationalUpdate>
+        <sparkle:belowVersion>27</sparkle:belowVersion>
+      </sparkle:informationalUpdate>
+      <sparkle:version>27</sparkle:version>
+      <sparkle:shortVersionString>1.7.3</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.7.3</h1>
+<ul>
+<li>Install Apple Core from the signed, notarized DMG delivered by Gumroad after payment. Activate with the license key on your purchase page.</li>
+<li>First-run setup now includes license activation and explains the Cloudflare domain requirement.</li>
+<li>Remote setup checks the public sign-in endpoint before reporting success. Failed sign-in, tunnel creation, and DNS routing now show actionable errors.</li>
+<li>Paid licenses protect automatic update downloads. Older versions direct you to Gumroad for a one-time manual reinstall.</li>
+<li>License verification rejects unpaid, refunded, test, and invalid purchases. Offline activation records require protected Keychain verification, and public status no longer includes buyer email.</li>
+</ul>
+<p>GitHub publishes source and release notes. Download the official app from <a href="https://amesconsulting.gumroad.com/l/applecore" rel="nofollow">Gumroad</a>.</p>
+      ]]></description>
+      <pubDate>Sat, 05 Sep 2026 14:52:22 +0000</pubDate>
+      <enclosure url="https://applecore.app/downloads/Apple.Core-1.7.3.zip"
+                 length="9777491"
+                 type="application/octet-stream"
+                 sparkle:edSignature="U6KXoHR6TULz0C0MchuPnYU6cf1fprd/p6Tu9tReYBGoY0PSt0Np4YrzMzKlQgM+dHmpKhPz0Ael+sWq3TDjBA==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.7.2</title>
+      <link>https://oliverames.github.io/apple-core/release-notes/v1.7.2.html</link>
+      <sparkle:version>26</sparkle:version>
+      <sparkle:shortVersionString>1.7.2</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.7.2</h1>
+<p>This release fixes license-state errors, connection failures, and crashes caused<br>
+by invalid tool arguments.</p>
+<ul>
+<li>Activation now has a compact license-key field, a purchase link, and a separate<br>
+license-file importer. Deactivation asks for confirmation before stopping access.</li>
+<li>License removal and replacement now take effect immediately. Delayed Gumroad<br>
+replies cannot restore a deactivated key or overwrite a newer activation.</li>
+<li>Gumroad verification rejects malformed replies and failed renewals. A failed<br>
+disk write no longer restores access after a known revocation.</li>
+<li>Maps and Location reject invalid coordinates, spans, and search radii before<br>
+calling Apple frameworks. Nearby searches use a supported default radius.</li>
+<li>Filesystem search and recent-file queries handle extreme numeric inputs<br>
+without integer-overflow crashes.</li>
+<li>OAuth clients can use dynamic loopback ports consistently. Registering new<br>
+clients no longer removes active connections or pending authorizations.</li>
+<li>Client metadata downloads and caches have enforced size limits.</li>
+<li>Cancelled or timed-out AppleScript and Shortcuts requests stop their child<br>
+processes, including children that ignore the first termination request.</li>
+</ul>
+<p>The regression suite now contains 191 tests. Existing licenses and configuration<br>
+remain compatible, and this update requires no new permissions.</p>
+      ]]></description>
+      <pubDate>Fri, 04 Sep 2026 20:20:35 +0000</pubDate>
+      <enclosure url="https://applecore.app/downloads/Apple.Core-1.7.2.zip"
+                 length="9740846"
+                 type="application/octet-stream"
+                 sparkle:edSignature="GWH3JtI/uAFgt9eaH5bTqv/tEHa14lTrVOmIMZXL4y+wStjDd3ixPNXTo1xdachewC/TQ926v1pjoiwumYyOAw==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.7.1</title>
+      <link>https://oliverames.github.io/apple-core/release-notes/v1.7.1.html</link>
+      <sparkle:version>25</sparkle:version>
+      <sparkle:shortVersionString>1.7.1</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.7.1</h1>
+<p>One change: activation with the license key from your Gumroad purchase.</p>
+<h2>Paste the key, not a file</h2>
+<p>1.7.0 required a signed license file. From 1.7.1, <strong>Settings → License</strong> accepts the license key Gumroad shows on the purchase page and in the receipt. Apple Core checks the key with Gumroad when you activate it and about once a day afterwards. Only the key and the product ID are sent. A Mac that is offline keeps its license for 14 days, so a network outage never switches a licensed server off. A refunded or disabled key closes the gate at the next check.</p>
+<p>A signed license file still works exactly as before, verified offline.</p>
+<h2>Upgrading</h2>
+<p>Updates download from <code class="notranslate">assets.amesvt.com</code>. Nothing to redo, and no new permissions.</p>
+      ]]></description>
+      <pubDate>Thu, 03 Sep 2026 14:26:49 +0000</pubDate>
+      <enclosure url="https://applecore.app/downloads/Apple.Core-1.7.1.zip"
+                 length="9680281"
+                 type="application/octet-stream"
+                 sparkle:edSignature="R6ZwagiZKPYp2fUk0p6zh6f4gKsc+xd3eEPdJMaPz24X974IU+k7qsM6emm+YbsYbZm8YDrQuu8rhpocnaI1DQ==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.7.0</title>
+      <link>https://oliverames.github.io/apple-core/release-notes/v1.7.0.html</link>
+      <sparkle:version>24</sparkle:version>
+      <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.7.0</h1>
+<p>Three changes, two of them found by watching a real connection fail.</p>
+<h2>A tunnel belongs to one Mac</h2>
+<p>A Cloudflare tunnel is one identity, and its credentials travel with the config file. A second Mac that launched Apple Core with a copy of that config became a second connector on the same tunnel, and Cloudflare spread requests across both. Every request that landed on the Mac without Apple Core failed, and from a cloud client that looked like "authorization failed" with the right token.</p>
+<p>Apple Core now records which Mac set the tunnel up. A copy of the config on another Mac stands down at launch instead of adding a connector, and says so in the Access pane with a choice: take the tunnel over on this Mac, or turn it off here. While the tunnel runs, the pane also asks Cloudflare how many Macs are connected and reports more than one as an error rather than a green check.</p>
+<p>Configs from earlier releases have no owner recorded. The Mac that launches with such a config enabled becomes the owner, so nothing changes for an existing single-Mac setup.</p>
+<h2>Trust granted from the authorization page</h2>
+<p>A new client's first connection used to wait for a dialog on the server's screen. On a Mac nobody is sitting at, that dialog was never answered and the client saw nothing but a timeout.</p>
+<p>The person filling in the OAuth authorization page has already typed the Apple Core token, which is the same authority the dialog asks for. The page now trusts that client on the Mac in the same step. The box is on by default, says where the dialog would otherwise appear, and says when that screen has nobody at it. Trust granted this way appears in Settings alongside trust granted from the dialog and can be withdrawn there.</p>
+<h2>License activation</h2>
+<p>The signed app now needs a license file before it serves MCP. Until one is activated in <strong>Settings → License</strong>, session-creating requests answer <strong>402 Payment Required</strong>, and <code class="notranslate">/license-status</code> says so without authentication. Builds from source are not affected. See <code class="notranslate">docs/licensing.md</code> in the repository for how licenses are issued.</p>
+<h2>Upgrading</h2>
+<p>Updates now download from <code class="notranslate">assets.amesvt.com</code> rather than a GitHub release asset. GitHub releases carry source and notes only.</p>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://oliverames.github.io/apple-core/release-notes/v1.0.3.html">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+<p>No new permissions.</p>
+      ]]></description>
+      <pubDate>Thu, 03 Sep 2026 13:44:11 +0000</pubDate>
+      <enclosure url="https://applecore.app/downloads/Apple.Core-1.7.0.zip"
+                 length="9646204"
+                 type="application/octet-stream"
+                 sparkle:edSignature="/GEjbRq53NvpVXkdg7byLc+xq78ST84fgy1BuDp8/R6u1MtxX5VMb8okowtYbNn3lgF21+wHdW2gZoOx1p19Dg==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <!-- `Scripts/release.sh appcast` prepends signed release entries here. -->
+  </channel>
+</rss><!-- sparkle-signatures:
+edSignature: sZzyERCOlHPrCha3kDGz7cbb9pmF80hhaHUNtKpMx9pYNB4rhkEkv7BOSeG50/o7Jr5ID7EcW5Z7/RgqLA1zAw==
+length: 14448
+-->
