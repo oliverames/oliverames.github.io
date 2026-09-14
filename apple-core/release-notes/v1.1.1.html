@@ -1,0 +1,70 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="robots" content="noindex"><title>Apple Core 1.1.1</title></head><body><main><h1>Apple Core 1.1.1</h1><p>Historical release notes. Visit <a href="https://applecore.app">applecore.app</a> for current information.</p>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.1.1</h1>
+<p>Apple Core 1.1.1 tightens client identity, OAuth revocation, remote setup, and the bundled command-line bridge. It also makes failed settings saves visible before Apple Core changes the tunnel or installs anything.</p>
+<h2>Client security</h2>
+<ul>
+<li>Connection approval now separates the authenticated OAuth registration from the MCP name a client reports for itself. Apple Core saves permanent trust by OAuth client ID, while clients using the shared bearer token still require approval for each connection.</li>
+<li>The Clients pane lists every registered OAuth client. Disconnecting one revokes its authorization codes and tokens, closes its active sessions, and removes its saved approval.</li>
+<li>OAuth clients can revoke access and refresh tokens through the advertised revocation endpoint. Revoking a refresh token also revokes access tokens from that authorization grant, and a failed disk write cannot report a successful revocation.</li>
+<li>OAuth resource values must match the advertised MCP address exactly, so a token cannot be issued for a URL variant that the server will not accept.</li>
+</ul>
+<h2>Connections</h2>
+<ul>
+<li>The bundled <code class="notranslate">apple-core</code> command now uses the MCP SDK's streaming HTTP transport. Server notifications reach standard output while other requests are running, and cancellation keeps JSON-RPC string and numeric identifiers distinct.</li>
+<li>Cancelling a request closes its matching HTTP response stream instead of leaving the client waiting on a response that will never arrive.</li>
+<li>HTTP sessions stay bound to the authenticated client that created them. A different client cannot reuse a valid session identifier.</li>
+</ul>
+<h2>Remote access</h2>
+<ul>
+<li>Cloudflare setup verifies that the public hostname is an exact CNAME for the selected tunnel. An existing record that points somewhere else now stops setup with an actionable error instead of being accepted.</li>
+<li>Apple Core verifies a downloaded <code class="notranslate">cloudflared</code> binary before installing it. Atomic replacement keeps the verified binary executable and preserves the installed copy if replacement fails.</li>
+<li>Settings now reports a configuration write failure and keeps the existing file unchanged. Tunnel setup, shutdown, and <code class="notranslate">cloudflared</code> installation stop before they can create external state that Apple Core cannot save.</li>
+</ul>
+<h2>Updates</h2>
+<ul>
+<li>Sparkle release notes now use stable GitHub links for older versions, and each release includes a SHA-256 checksum beside the notarized app archive.</li>
+</ul>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://oliverames.github.io/apple-core/release-notes/v1.0.3.html">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+      </main></body></html>
