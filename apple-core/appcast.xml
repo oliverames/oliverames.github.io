@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Apple Core Updates</title>
+    <link>https://applecore.app/appcast.xml</link>
+    <description>Updates for Apple Core - a native macOS MCP server for Apple services</description>
+    <language>en</language>
+    <item>
+      <title>Version 1.7.3</title>
+      <link>https://applecore.app/</link>
+      <sparkle:informationalUpdate>
+        <sparkle:belowVersion>27</sparkle:belowVersion>
+      </sparkle:informationalUpdate>
+      <sparkle:version>27</sparkle:version>
+      <sparkle:shortVersionString>1.7.3</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.7.3</h1>
+<ul>
+<li>Install Apple Core from the signed, notarized DMG delivered by Gumroad after payment. Activate with the license key on your purchase page.</li>
+<li>First-run setup now includes license activation and explains the Cloudflare domain requirement.</li>
+<li>Remote setup checks the public sign-in endpoint before reporting success. Failed sign-in, tunnel creation, and DNS routing now show actionable errors.</li>
+<li>Paid licenses protect automatic update downloads. Older versions direct you to Gumroad for a one-time manual reinstall.</li>
+<li>License verification rejects unpaid, refunded, test, and invalid purchases. Offline activation records require protected Keychain verification, and public status no longer includes buyer email.</li>
+</ul>
+<p>GitHub publishes source and release notes. Download the official app from <a href="https://amesconsulting.gumroad.com/l/applecore" rel="nofollow">Gumroad</a>.</p>
+      ]]></description>
+      <pubDate>Sat, 05 Sep 2026 14:52:22 +0000</pubDate>
+      <enclosure url="https://applecore.app/downloads/Apple.Core-1.7.3.zip"
+                 length="9777491"
+                 type="application/octet-stream"
+                 sparkle:edSignature="U6KXoHR6TULz0C0MchuPnYU6cf1fprd/p6Tu9tReYBGoY0PSt0Np4YrzMzKlQgM+dHmpKhPz0Ael+sWq3TDjBA==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.7.2</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.7.2</link>
+      <sparkle:version>26</sparkle:version>
+      <sparkle:shortVersionString>1.7.2</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.7.2</h1>
+<p>This release fixes license-state errors, connection failures, and crashes caused<br>
+by invalid tool arguments.</p>
+<ul>
+<li>Activation now has a compact license-key field, a purchase link, and a separate<br>
+license-file importer. Deactivation asks for confirmation before stopping access.</li>
+<li>License removal and replacement now take effect immediately. Delayed Gumroad<br>
+replies cannot restore a deactivated key or overwrite a newer activation.</li>
+<li>Gumroad verification rejects malformed replies and failed renewals. A failed<br>
+disk write no longer restores access after a known revocation.</li>
+<li>Maps and Location reject invalid coordinates, spans, and search radii before<br>
+calling Apple frameworks. Nearby searches use a supported default radius.</li>
+<li>Filesystem search and recent-file queries handle extreme numeric inputs<br>
+without integer-overflow crashes.</li>
+<li>OAuth clients can use dynamic loopback ports consistently. Registering new<br>
+clients no longer removes active connections or pending authorizations.</li>
+<li>Client metadata downloads and caches have enforced size limits.</li>
+<li>Cancelled or timed-out AppleScript and Shortcuts requests stop their child<br>
+processes, including children that ignore the first termination request.</li>
+</ul>
+<p>The regression suite now contains 191 tests. Existing licenses and configuration<br>
+remain compatible, and this update requires no new permissions.</p>
+      ]]></description>
+      <pubDate>Fri, 04 Sep 2026 20:20:35 +0000</pubDate>
+      <enclosure url="https://applecore.app/downloads/Apple.Core-1.7.2.zip"
+                 length="9740846"
+                 type="application/octet-stream"
+                 sparkle:edSignature="GWH3JtI/uAFgt9eaH5bTqv/tEHa14lTrVOmIMZXL4y+wStjDd3ixPNXTo1xdachewC/TQ926v1pjoiwumYyOAw==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.7.1</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.7.1</link>
+      <sparkle:version>25</sparkle:version>
+      <sparkle:shortVersionString>1.7.1</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.7.1</h1>
+<p>One change: activation with the license key from your Gumroad purchase.</p>
+<h2>Paste the key, not a file</h2>
+<p>1.7.0 required a signed license file. From 1.7.1, <strong>Settings → License</strong> accepts the license key Gumroad shows on the purchase page and in the receipt. Apple Core checks the key with Gumroad when you activate it and about once a day afterwards. Only the key and the product ID are sent. A Mac that is offline keeps its license for 14 days, so a network outage never switches a licensed server off. A refunded or disabled key closes the gate at the next check.</p>
+<p>A signed license file still works exactly as before, verified offline.</p>
+<h2>Upgrading</h2>
+<p>Updates download from <code class="notranslate">assets.amesvt.com</code>. Nothing to redo, and no new permissions.</p>
+      ]]></description>
+      <pubDate>Thu, 03 Sep 2026 14:26:49 +0000</pubDate>
+      <enclosure url="https://applecore.app/downloads/Apple.Core-1.7.1.zip"
+                 length="9680281"
+                 type="application/octet-stream"
+                 sparkle:edSignature="R6ZwagiZKPYp2fUk0p6zh6f4gKsc+xd3eEPdJMaPz24X974IU+k7qsM6emm+YbsYbZm8YDrQuu8rhpocnaI1DQ==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.7.0</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.7.0</link>
+      <sparkle:version>24</sparkle:version>
+      <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.7.0</h1>
+<p>Three changes, two of them found by watching a real connection fail.</p>
+<h2>A tunnel belongs to one Mac</h2>
+<p>A Cloudflare tunnel is one identity, and its credentials travel with the config file. A second Mac that launched Apple Core with a copy of that config became a second connector on the same tunnel, and Cloudflare spread requests across both. Every request that landed on the Mac without Apple Core failed, and from a cloud client that looked like "authorization failed" with the right token.</p>
+<p>Apple Core now records which Mac set the tunnel up. A copy of the config on another Mac stands down at launch instead of adding a connector, and says so in the Access pane with a choice: take the tunnel over on this Mac, or turn it off here. While the tunnel runs, the pane also asks Cloudflare how many Macs are connected and reports more than one as an error rather than a green check.</p>
+<p>Configs from earlier releases have no owner recorded. The Mac that launches with such a config enabled becomes the owner, so nothing changes for an existing single-Mac setup.</p>
+<h2>Trust granted from the authorization page</h2>
+<p>A new client's first connection used to wait for a dialog on the server's screen. On a Mac nobody is sitting at, that dialog was never answered and the client saw nothing but a timeout.</p>
+<p>The person filling in the OAuth authorization page has already typed the Apple Core token, which is the same authority the dialog asks for. The page now trusts that client on the Mac in the same step. The box is on by default, says where the dialog would otherwise appear, and says when that screen has nobody at it. Trust granted this way appears in Settings alongside trust granted from the dialog and can be withdrawn there.</p>
+<h2>License activation</h2>
+<p>The signed app now needs a license file before it serves MCP. Until one is activated in <strong>Settings → License</strong>, session-creating requests answer <strong>402 Payment Required</strong>, and <code class="notranslate">/license-status</code> says so without authentication. Builds from source are not affected. See <code class="notranslate">docs/licensing.md</code> in the repository for how licenses are issued.</p>
+<h2>Upgrading</h2>
+<p>Updates now download from <code class="notranslate">assets.amesvt.com</code> rather than a GitHub release asset. GitHub releases carry source and notes only.</p>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+<p>No new permissions.</p>
+      ]]></description>
+      <pubDate>Thu, 03 Sep 2026 13:44:11 +0000</pubDate>
+      <enclosure url="https://applecore.app/downloads/Apple.Core-1.7.0.zip"
+                 length="9646204"
+                 type="application/octet-stream"
+                 sparkle:edSignature="/GEjbRq53NvpVXkdg7byLc+xq78ST84fgy1BuDp8/R6u1MtxX5VMb8okowtYbNn3lgF21+wHdW2gZoOx1p19Dg==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.6.1</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.6.1</link>
+      <sparkle:version>23</sparkle:version>
+      <sparkle:shortVersionString>1.6.1</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.6.1</h1>
+<p>Two corrections to 1.6.0, both found by exercising it against a running server.</p>
+<h2>A rejected client identifier said the wrong thing</h2>
+<p>A client identifier that Apple Core refuses — a host resolving to a private address, a document claiming a different identifier, a document carrying a secret — came back as <strong>500, "Apple Core could not save the OAuth client registration"</strong>. Nothing had failed to save, and nothing was wrong on the server: the client's own identifier or document was at fault.</p>
+<p>Before 1.6.0 that catch-all was close enough to true, because the only thing that could fail there was writing a registration to disk. Client ID Metadata Documents added a second way to fail and inherited the wrong explanation.</p>
+<p>These now return <strong>400</strong> with the actual reason, naming what was rejected and why, so a client that publishes a bad document can see what to fix.</p>
+<h2>A way out of a blocked permission prompt</h2>
+<p>Where macOS refuses to show a consent prompt, Apple Core says so, but it only offered "restore the default security settings" — which on a Mac configured that way for a reason reads as a permanent trade-off.</p>
+<p>It isn't one. The permission is stored separately from the setting that blocks the prompt, so it only has to be granted once: clear the boot-args, restart, ask again and allow it, then put the boot-args back. The permission stays. The explanation now says that.</p>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+<p>Nothing to redo, and no new permissions.</p>
+      ]]></description>
+      <pubDate>Mon, 31 Aug 2026 14:00:06 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.6.1/Apple.Core-1.6.1.zip"
+                 length="9554688"
+                 type="application/octet-stream"
+                 sparkle:edSignature="wE6/jD/DgCA12XI/0b1hbrA5zFsSLweR3l/XZrIXevzIFZCIvBdLZ5QabGh2jGa6aJv6JpQDSviXwhhf5JlZCQ==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.6.0</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.6.0</link>
+      <sparkle:version>22</sparkle:version>
+      <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.6.0</h1>
+<p>Cloud clients can now identify themselves without registering, apps are opened when a request needs them, and a path outside your shared folders no longer tells the caller anything about itself.</p>
+<h2>Clients identify themselves by URL</h2>
+<p>Until now a cloud client had to register before it could connect, and it registered again every time it reconnected. The result was a Clients list with several entries of the same name, issued in the same second, only one of which was live.</p>
+<p>Apple Core now supports <strong>Client ID Metadata Documents</strong>, the mechanism Anthropic recommends and which Claude products use. The client's identifier is an https URL serving its own metadata, so it keeps one identity for as long as it keeps that URL, and reconnecting updates the existing entry instead of adding another.</p>
+<p>Because the identifier is a URL this server fetches, it is treated as hostile:</p>
+<ul>
+<li><strong>https only</strong>, with no credentials, no fragment, and no dot segments in the path. Identifiers are compared literally, so a port makes a different client.</li>
+<li><strong>The host must not resolve to a special-use address.</strong> This app runs on a home network, and an unguarded fetch of a client-supplied URL would reach the router and everything else on it. Every address a name resolves to is checked, not just the first.</li>
+<li><strong>Redirects are never followed</strong>, at most 5KB is read, and only a 200 counts.</li>
+<li><strong>The document must claim the identifier it was fetched from.</strong> Without that check anyone could point a request at somebody else's document and borrow their name on the consent screen.</li>
+<li><strong>A document carrying a client secret is refused</strong>, since it is a public document.</li>
+</ul>
+<p>The consent page now shows the hostname the identifier comes from. A client supplies its own display name, so the name is exactly what an impersonator would get right; the hostname is the part it cannot.</p>
+<p>Existing registered clients keep working and are unaffected.</p>
+<h2>Apps open when a request needs them</h2>
+<p>Asking about mail while Mail was closed used to fail, or launch the app into your face. Apple Core now opens the app a request depends on, without bringing it to the front, and waits for it to finish launching before running anything. This covers Mail, Notes and Messages, at every point a script runs.</p>
+<h2>A path outside your shared folders reveals nothing</h2>
+<p>Asking for a file outside the shared folders could answer "that is a broken symbolic link" or "that does not exist". Both are facts about a file the caller was never allowed to see, which made the filesystem surface usable as a probe for what exists elsewhere on the Mac.</p>
+<p>Containment is now decided before anything else, so every path outside your shared folders gets the same answer. The check that refuses a broken symbolic link inside a shared folder is unchanged, and its message no longer talks about writing when you were reading.</p>
+<h2>When macOS will not show a permission prompt</h2>
+<p>Some Macs are configured so that macOS refuses to display consent prompts for apps Apple did not sign, which custom boot-args such as <code class="notranslate">amfi_get_out_of_my_way</code> cause. Asking for automation access there came back as "Denied", which looked like a decision somebody had made and sent you to System Settings, where no entry exists because nothing was recorded.</p>
+<p>That case is now told apart from a real refusal and explained where it appears, including what causes it. Neither button is offered, because neither would help.</p>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+<p>No new permissions, and no shared folder or client approval changes. Every Apple Core install uses its own Cloudflare account and its own tunnel; nothing about anyone else's deployment ships in the app.</p>
+      ]]></description>
+      <pubDate>Mon, 31 Aug 2026 13:37:39 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.6.0/Apple.Core-1.6.0.zip"
+                 length="9551302"
+                 type="application/octet-stream"
+                 sparkle:edSignature="INk8lwZ5ZV0i7pAuq80oQeMgksdsd+q9enwFxzfs0DOOH+E2ld4LdkbWHyHXuXa+9crqpLXY3aMuVNgasGH2Dw==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.5.1</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.5.1</link>
+      <sparkle:version>21</sparkle:version>
+      <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.5.1</h1>
+<p>Clarity, mostly. Sharing a folder now tells you what you have actually shared, and asking macOS for permission to control Mail, Messages or Notes works from inside the app instead of sending you somewhere that cannot help.</p>
+<h2>Shared folders say what they expose</h2>
+<p>Every shared folder used to look the same in Settings: a name, a path and a switch. Sharing one project directory and sharing your entire home folder read-write were presented identically, and adding a folder that already sat inside another shared folder said nothing at all.</p>
+<p>Folders now carry a plain-language note when there is something worth knowing:</p>
+<ul>
+<li><strong>Your whole Home folder.</strong> Called out as covering everything in it, including app data and saved passwords, with the suggestion that Documents is usually enough. Marked more strongly when writing is allowed.</li>
+<li><strong>The whole disk</strong>, if a folder above your home folder is shared.</li>
+<li><strong>Already covered.</strong> A folder inside another shared folder is marked as adding nothing, so it can be removed.</li>
+</ul>
+<p>An ordinary folder says nothing. Advice nobody needs is noise, and noise is what gets ignored when it matters.</p>
+<h2>Permission to control Mail, Messages and Notes</h2>
+<p>Two separate problems in Diagnostics, both of which made a working setup look broken or an unfinished one look impossible.</p>
+<p><strong>"Mail not running" was misleading.</strong> macOS cannot report an automation grant while the target app is closed, and the panel showed that failure as though it were the answer. It now says it cannot check while the app is closed, which is what is actually true. Permission may well already be granted.</p>
+<p><strong>"Open Settings" was a dead end.</strong> System Settings only lists apps that have already asked for automation, so a service that had never requested it had no row there to switch on. Nothing you could click would help.</p>
+<p>There is now a <strong>Request Access</strong> button on those rows. It asks macOS directly, showing the usual consent prompt, which is also what makes the app appear under Automation in System Settings afterwards. The target app is opened quietly in the background first, because the request cannot be answered for an app that is not running, and it is not brought to the front. Settings is still offered for a permission you have actually refused, since macOS will not ask again about those.</p>
+<p>Opening Diagnostics still never prompts on its own. Consent is only ever requested when you press the button.</p>
+<h2>Two ways to connect, described as two things</h2>
+<p>Settings said "Every client uses the same address and token", which is not true and blurred two different mechanisms.</p>
+<ul>
+<li><strong>Apps on this Mac</strong> connect with the address and your token. It is one long-lived secret, the same for every one of them, and it identifies no particular client.</li>
+<li><strong>Apps on the web</strong> sign in through a page instead and get their own credentials, which can be withdrawn one at a time. They never need the token pasted anywhere.</li>
+</ul>
+<p>Each group now says which of the two it uses, and the shared token and OAuth clients are described in their own terms rather than as one idea.</p>
+<p><strong>Copy Address and Copy Token are separate buttons.</strong> They were one button that copied both on two lines, which then had to be pulled apart again, since clients ask for the address in one field and the token in another.</p>
+<h2>Telling two identical clients apart</h2>
+<p>A cloud client that registers twice in one connection attempt leaves two rows with the same name, and dynamic registration does exactly that. Until now they were distinguishable only by an opaque client ID, and both were registered in the same second, so nothing on screen said which one was real.</p>
+<p>Each client now says whether it has ever completed a sign-in. Registration happens before sign-in, so a client that registered and stopped is a dead entry: it is marked as never signed in and safe to disconnect, leaving the working one obvious.</p>
+<h2>Smaller</h2>
+<p>The Shared Token row in Settings › Clients now leads with what it describes rather than with its status, matching the rows beneath it.</p>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+<p>Nothing to redo, and no new permissions. Existing shared folders and approvals are untouched; the folder notes are descriptions of what you already have.</p>
+      ]]></description>
+      <pubDate>Mon, 31 Aug 2026 13:07:32 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.5.1/Apple.Core-1.5.1.zip"
+                 length="9506523"
+                 type="application/octet-stream"
+                 sparkle:edSignature="mj1vzR3WMVKP0hU1qhMi4BZPmK8nFcYftKqHNfBIjVnwDtJ3sgBp8jJBFGppujoZsfDZCrGIeKz413WIHxIoAg==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.5.0</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.5.0</link>
+      <sparkle:version>20</sparkle:version>
+      <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.5.0</h1>
+<p>Three corrections to the Filesystem surface, found by auditing it against the running server. One of them changes how <code class="notranslate">filesystem_write</code> behaves, so it is worth reading before updating.</p>
+<h2>Writing no longer replaces a file by accident</h2>
+<p><code class="notranslate">filesystem_move</code> and <code class="notranslate">filesystem_copy</code> have always refused to overwrite, for a stated reason: a replaced file does not go to the Trash, so it is the one destructive act on this surface with no undo. <code class="notranslate">filesystem_write</code> was the exception. It replaced whatever was at the path and reported the fact afterwards, and it is the tool a client reaches for when it believes a file is new.</p>
+<p><strong><code class="notranslate">filesystem_write</code> now refuses to replace an existing file unless you pass <code class="notranslate">overwrite: true</code>.</strong> The error says so and names the alternatives, so a client that meant to update a file can retry deliberately, or use <code class="notranslate">filesystem_append</code> instead.</p>
+<p>This is a behaviour change. Anything that relied on write silently replacing a file needs <code class="notranslate">overwrite: true</code> from now on. Creating a new file is unaffected.</p>
+<h2>Searching contents no longer claims to be truncated when it isn't</h2>
+<p><code class="notranslate">filesystem_search_content</code> re-checks every Spotlight hit against the shared folders, because <code class="notranslate">mdfind</code> is a separate process and must not be the access control. It then measured truncation against the raw hit count, so any hit dropped for sitting outside a shared folder made a complete answer report <code class="notranslate">truncated: true</code>. Callers were told to narrow a search that had already returned everything they were allowed to see.</p>
+<p>Truncation is now measured against the matches you can actually be shown.</p>
+<h2>Hidden files behave the same in both tools</h2>
+<p><code class="notranslate">filesystem_list</code> showed dotfiles and <code class="notranslate">filesystem_search</code> skipped them, so a file you could see when listing a folder could never be found by name. Both now include hidden files, and both take <code class="notranslate">includeHidden</code> if you would rather leave them out. Hidden is decided by the filesystem's own flag, so a file hidden without a leading dot is treated correctly too.</p>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+<p>No new permissions, and shared folders are unchanged. The only thing to check is whether anything you have automated calls <code class="notranslate">filesystem_write</code> expecting it to replace a file.</p>
+      ]]></description>
+      <pubDate>Mon, 31 Aug 2026 12:40:19 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.5.0/Apple.Core-1.5.0.zip"
+                 length="9485327"
+                 type="application/octet-stream"
+                 sparkle:edSignature="jhkBqclJ5Y9BGlkHGc3culBgfXuLNSELlk6g1LPhH4ZLserfz4aXQcjaVXuk69Kme0J2PSNexiM1faE5AfNHCA==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.4.1</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.4.1</link>
+      <sparkle:version>19</sparkle:version>
+      <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.4.1</h1>
+<p>A fix for a connection that could hang, introduced by 1.4.0, plus two smaller corrections to the new Cloudflare Access settings.</p>
+<h2>A coalesced connection could park forever</h2>
+<p>1.4.0 gave the shared token a stable approval identity, which is what made approving it once work. It also meant that connections arriving while an approval dialog is already open are recognised as the same subject and wait on that one answer rather than opening a dialog each. That part is intended and is why one approval now settles several waiting clients at once.</p>
+<p>What was missing is the case where the connection holding the dialog goes away before anyone answers, because the client gave up or the transport died. The waiting connections were left with nothing to resolve them and would hang until the process restarted. They are now denied along with the connection that dropped.</p>
+<p>This was unreachable before 1.4.0, since every shared-token connection had its own identity and so nothing was ever coalesced onto it.</p>
+<h2>Cloudflare Access settings</h2>
+<ul>
+<li>Turning the protection off no longer asks for an API token when there was never anything to remove. Enabling the toggle, changing your mind, and having no token left you unable to turn it back off.</li>
+<li>The list of allowed people is filled in from what is already saved when Settings opens. It previously showed an empty field even when addresses were configured, so applying again looked like it would clear them.</li>
+</ul>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+<p>Nothing to redo. Clients you have already approved stay approved.</p>
+      ]]></description>
+      <pubDate>Sat, 29 Aug 2026 22:28:51 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.4.1/Apple.Core-1.4.1.zip"
+                 length="9481074"
+                 type="application/octet-stream"
+                 sparkle:edSignature="4x7lfRk7GRNTE314lUX3DNDYOdfvIuL+NcZ4J/Ecw9S8I1QgXfdeBEJIAoNZNsB8/eze4pach8LwSiG4Pt23AA==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.4.0</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.4.0</link>
+      <sparkle:version>18</sparkle:version>
+      <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.4.0</h1>
+<p>Apple Core 1.4.0 is about being asked to approve things. Connecting with the shared token used to mean answering a dialog on every single connection, with no way to stop it. Now one approval is enough. Alongside that, Cloudflare Access can be put in front of the one page where the token gets typed.</p>
+<h2>Approving a client once</h2>
+<p>Connecting with the shared Apple Core token prompted for approval every time, and ticking a box to remember the answer was never offered. That was not a small oversight: the approval subject was a fresh identifier per connection, so nothing could ever match what had been approved before. Reconnect, restart the client, restart the Mac, and you were asked again.</p>
+<ul>
+<li>The approval dialog now offers to remember the shared token, and remembering it works. Approve once and clients using that token connect without asking again.</li>
+<li>The grant is tied to the token itself, so <strong>rotating the token revokes it</strong>. A new token starts from an unapproved state, which is what you would want if you rotated it because the old one leaked.</li>
+<li>The dialog says what it is actually asking. Trusting the shared token trusts anything that presents it, rather than one particular client, and the wording no longer implies otherwise.</li>
+<li>Settings › Clients has a Shared Token section showing whether that grant is in place, with a control to require approval again. Trust you cannot see is trust you cannot withdraw.</li>
+</ul>
+<p>OAuth clients are unchanged and keep their existing approvals. Nothing needs to be re-approved after updating.</p>
+<h2>A login in front of the authorization page</h2>
+<p>The OAuth authorization page is where the Apple Core token gets typed into a browser, and it is the only page on the server a person visits. Cloudflare Access can now be placed in front of it, from Settings › Access, so reaching that page requires a Cloudflare login first.</p>
+<p>It protects that page and nothing else, deliberately. The MCP endpoint and the client registration and token endpoints are called by client software with no browser and no one to satisfy a login, so putting Access over the whole host would stop every client connecting. Apple Core will not do that: the protection is scoped to the single path, and the code refuses to create a rule covering the machine endpoints even if asked.</p>
+<p>Setting it up needs a Cloudflare API token with Access permissions. The credential from <code class="notranslate">cloudflared</code> sign-in is not enough, because it is scoped to tunnel and DNS work. The API token is kept in the Keychain rather than in the config file, since it can change Zero Trust policy for the whole account.</p>
+<p>This is off by default and changes nothing until you turn it on.</p>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+<p>No new permissions. If you have already approved clients, they stay approved.</p>
+      ]]></description>
+      <pubDate>Sat, 29 Aug 2026 20:55:59 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.4.0/Apple.Core-1.4.0.zip"
+                 length="9480536"
+                 type="application/octet-stream"
+                 sparkle:edSignature="miHGm74EE36FCfzZFgmo4nB6TC5bpdE8NPW2N9ptT85U2gd4sXmyK4kBsc8cbhSZAqXGUh9v5QyCcRHEVUY8Bw==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.3.0</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.3.0</link>
+      <sparkle:version>17</sparkle:version>
+      <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.3.0</h1>
+<p>Apple Core 1.3.0 fills in the Filesystem surface, which goes from 10 tools to 16. The theme is reaching things that were previously out of reach: what is inside a file rather than just its name, the part of a large file past the read cap, non-text files at all, and Finder tags.</p>
+<h2>Finding things</h2>
+<ul>
+<li><code class="notranslate">filesystem_search_content</code> searches what is inside files, using Spotlight. It reaches into PDFs, Pages and Word documents and anything else Spotlight indexes, and answers immediately instead of walking the tree. Until now you could only search by file name.</li>
+<li><code class="notranslate">filesystem_recent</code> lists what changed most recently beneath a shared folder, for when someone refers to what they were just working on.</li>
+</ul>
+<p>Both rely on Spotlight, so a volume with indexing switched off will come back empty. Searching by file name still works there.</p>
+<h2>Reading</h2>
+<ul>
+<li><code class="notranslate">filesystem_read</code> accepts an offset and reports <code class="notranslate">nextOffset</code>, so a file larger than the 512KB cap can be read the rest of the way. Previously anything past the first page was simply unreachable.</li>
+<li><code class="notranslate">filesystem_read_binary</code> returns a non-text file as base64, up to 256KB. Larger files stay on disk, where they belong.</li>
+<li><code class="notranslate">filesystem_hash</code> gives a file's SHA-256, for checking that two files match or that a copy came through intact. It hashes in chunks, so it works on files far too large to hold in memory.</li>
+</ul>
+<h2>Writing and organising</h2>
+<ul>
+<li><code class="notranslate">filesystem_append</code> adds text to the end of a file, creating it if it is not there. Adding a line no longer means reading a file back and rewriting it whole.</li>
+<li><code class="notranslate">filesystem_tags</code> reads and replaces Finder tags. Setting replaces the whole list, so read first if you are adding one to what is already there.</li>
+</ul>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+<p>Nothing here needs a new permission. The Filesystem surface still exposes nothing at all until you share a folder with it in Settings, and shared folders may overlap, so you can share a folder inside one you already share and give just that one write access.</p>
+      ]]></description>
+      <pubDate>Fri, 28 Aug 2026 16:35:16 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.3.0/Apple.Core-1.3.0.zip"
+                 length="9398356"
+                 type="application/octet-stream"
+                 sparkle:edSignature="YSpjK/JWsq7OLGf/W/N8FrJeUi0NWQDDFHy3a0JAwlT7TIU0NlyT7ZmJDhgcCfbOkIJS+MLblfoIN3Tl4VvEBw==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.2.0</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.2.0</link>
+      <sparkle:version>15</sparkle:version>
+      <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.2.0</h1>
+<p>Apple Core 1.2.0 expands the two surfaces that were furthest from behaving like the cloud connectors they stand in for. Notes goes from 21 tools to 32, Filesystem from 5 to 10, and a listing bug that made several Notes tools look like a dead server is fixed.</p>
+<h2>Notes</h2>
+<ul>
+<li>Listing notes is fast again. <code class="notranslate">notes_list</code> resolved each note's folder with a separate request to Notes, so a default page of 50 outlived the client's patience and reported the server as unresponsive. It now fetches folders in bulk, and the cost no longer grows with the page size. The same call also returned every note twice; it does not any more.</li>
+<li>New tools: <code class="notranslate">notes_list_shared</code> for notes shared with other people, <code class="notranslate">notes_fetch_attachment</code> for small attachments inline, and <code class="notranslate">notes_show_folder</code>, <code class="notranslate">notes_show_account</code> and <code class="notranslate">notes_show_attachment</code> alongside the existing <code class="notranslate">notes_show</code>.</li>
+<li><code class="notranslate">notes_health_check</code> answers quickly whether the surface is usable. <code class="notranslate">notes_doctor</code> reports Apple Events reachability, automation permission, account state and database access, each with what to do about it.</li>
+<li>Four new tools read the local Notes database, because Notes offers no other route to them: <code class="notranslate">notes_get_link</code> for a note's <code class="notranslate">notes://</code> deep link, <code class="notranslate">notes_get_metadata</code> for pinned and trashed state and the password hint, <code class="notranslate">notes_get_checklist_state</code> for which checklist items are ticked, and <code class="notranslate">notes_get_sync_status</code>. They need Full Disk Access and say so plainly when they do not have it. Every other Notes tool works without it, and <code class="notranslate">notes_doctor</code> tells you which case you are in.</li>
+<li>Checklist state was previously invisible. Notes strips it out of the HTML body, so <code class="notranslate">notes_get</code> and <code class="notranslate">notes_get_markdown</code> show checklist items as ordinary list items and cannot tell you what is done.</li>
+</ul>
+<h2>Filesystem</h2>
+<ul>
+<li>Shared folders may now overlap. Sharing your home folder no longer silently blocks you from adding anything inside it, which is what made every folder after the first appear to do nothing. A narrower folder can be writable while the one containing it stays read-only, so you can grant writes to one place without opening up everything above it.</li>
+<li>New tools: <code class="notranslate">filesystem_stat</code>, <code class="notranslate">filesystem_create_folder</code>, <code class="notranslate">filesystem_move</code>, <code class="notranslate">filesystem_copy</code> and <code class="notranslate">filesystem_trash</code>.</li>
+<li>Deleting moves an item to the Trash. Nothing in this surface removes a file outright, so anything a client deletes can still be recovered.</li>
+<li>Moving and copying refuse to overwrite. An overwritten file is the only thing here with no way back, because the replaced copy never reaches the Trash.</li>
+<li><code class="notranslate">filesystem_list</code> and <code class="notranslate">filesystem_search</code> accept <code class="notranslate">limit</code> and <code class="notranslate">offset</code> and report <code class="notranslate">nextOffset</code>. Search previously stopped at 200 matches without saying so, so there was no way to tell a complete result from a truncated one.</li>
+</ul>
+<h2>Headless Macs</h2>
+<p>Apple Core is often reached on a Mac nobody is sitting at. The five tools that open a window, the <code class="notranslate">notes_show_*</code> family and <code class="notranslate">notes_selected</code>, now refuse on a machine with no active desktop session instead of reporting success for a window that nobody can see. <code class="notranslate">notes_selected</code> was the worst of these, answering that no notes were selected, which looks exactly like a real answer.</p>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+<p>To use the four database-backed Notes tools, grant Apple Core Full Disk Access in System Settings under Privacy &amp; Security, then quit and reopen it. Nothing else in Apple Core needs it.</p>
+      ]]></description>
+      <pubDate>Fri, 28 Aug 2026 15:49:23 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.2.0/Apple.Core-1.2.0.zip"
+                 length="9358679"
+                 type="application/octet-stream"
+                 sparkle:edSignature="/qragpnwR5aUJQabnqU71/yWv6so58CfEFMOgG1Clizo/WLHLVDjta8MaECxMAmm+uqXB303bUyeLH0mdYo/Bw==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.1.1</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.1.1</link>
+      <sparkle:version>13</sparkle:version>
+      <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.1.1</h1>
+<p>Apple Core 1.1.1 tightens client identity, OAuth revocation, remote setup, and the bundled command-line bridge. It also makes failed settings saves visible before Apple Core changes the tunnel or installs anything.</p>
+<h2>Client security</h2>
+<ul>
+<li>Connection approval now separates the authenticated OAuth registration from the MCP name a client reports for itself. Apple Core saves permanent trust by OAuth client ID, while clients using the shared bearer token still require approval for each connection.</li>
+<li>The Clients pane lists every registered OAuth client. Disconnecting one revokes its authorization codes and tokens, closes its active sessions, and removes its saved approval.</li>
+<li>OAuth clients can revoke access and refresh tokens through the advertised revocation endpoint. Revoking a refresh token also revokes access tokens from that authorization grant, and a failed disk write cannot report a successful revocation.</li>
+<li>OAuth resource values must match the advertised MCP address exactly, so a token cannot be issued for a URL variant that the server will not accept.</li>
+</ul>
+<h2>Connections</h2>
+<ul>
+<li>The bundled <code class="notranslate">apple-core</code> command now uses the MCP SDK's streaming HTTP transport. Server notifications reach standard output while other requests are running, and cancellation keeps JSON-RPC string and numeric identifiers distinct.</li>
+<li>Cancelling a request closes its matching HTTP response stream instead of leaving the client waiting on a response that will never arrive.</li>
+<li>HTTP sessions stay bound to the authenticated client that created them. A different client cannot reuse a valid session identifier.</li>
+</ul>
+<h2>Remote access</h2>
+<ul>
+<li>Cloudflare setup verifies that the public hostname is an exact CNAME for the selected tunnel. An existing record that points somewhere else now stops setup with an actionable error instead of being accepted.</li>
+<li>Apple Core verifies a downloaded <code class="notranslate">cloudflared</code> binary before installing it. Atomic replacement keeps the verified binary executable and preserves the installed copy if replacement fails.</li>
+<li>Settings now reports a configuration write failure and keeps the existing file unchanged. Tunnel setup, shutdown, and <code class="notranslate">cloudflared</code> installation stop before they can create external state that Apple Core cannot save.</li>
+</ul>
+<h2>Updates</h2>
+<ul>
+<li>Sparkle release notes now use stable GitHub links for older versions, and each release includes a SHA-256 checksum beside the notarized app archive.</li>
+</ul>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+      ]]></description>
+      <pubDate>Fri, 28 Aug 2026 00:10:53 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.1.1/Apple.Core-1.1.1.zip"
+                 length="9261389"
+                 type="application/octet-stream"
+                 sparkle:edSignature="o7mH3CH3scOtMuBvmHtM9xDGcSRc7ZWtpQsToRugQ4dZXLxIzqbSErdNxc3KpIvN6h+vRC8tuMYQX0MhlW4+AA==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.1.0</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.1.0</link>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.1.0</h1>
+<p>Apple Core 1.1.0 grows the standard build from 77 tools to 106, adds a Filesystem surface bounded by the folders you share with it, and replaces the six-pane settings window with guided onboarding and three panes. It also carries an audit and adversarial review pass that repaired the server lifecycle, the connection approval flow, and several security edges.</p>
+<h2>New surfaces and tools</h2>
+<ul>
+<li><strong>Filesystem (5 tools)</strong>: <code class="notranslate">filesystem_roots</code>, <code class="notranslate">filesystem_list</code>, <code class="notranslate">filesystem_read</code>, <code class="notranslate">filesystem_write</code>, and <code class="notranslate">filesystem_search</code>, restricted to an explicit allowlist of folders you share in Settings. The surface reports itself inactive and exposes nothing until you share a folder, so a fresh install has no filesystem access at all.</li>
+<li><strong>Messages (5 tools)</strong>: a direct <code class="notranslate">chat.db</code> reader replaces the blocked AppleScript path and unblocks attachment listing and per-chat filtering.</li>
+<li><strong>Contacts (12 tools)</strong>: contact groups are readable and writable, and contact writes now cover the fields earlier builds could only read.</li>
+<li><strong>Reminders (7 tools)</strong>: list sections are readable through a read-only store reader.</li>
+<li><strong>Calendar (6 tools)</strong>: events carry attendees, and every tool sits under a single <code class="notranslate">calendar_</code> prefix.</li>
+<li><strong>Utilities (6 tools)</strong>: promoted from one placeholder tool to beep, notify, clipboard read, clipboard write, open URL, and system info.</li>
+<li><strong>Shortcuts (4 tools)</strong>: folders, shortcut identifiers, file input, output paths, and output types are all reachable. File arguments resolve through the same shared-folder allowlist the Filesystem surface uses, so a shortcut cannot reach outside it.</li>
+<li><strong>Capture (4 tools)</strong>: <code class="notranslate">capture_list_windows</code> makes displays and windows discoverable. Window and display capture accepted identifiers before this release but offered no way to learn one, so only whole-screen capture was reachable in practice. Capture also now says when the screen is locked instead of reporting no displays.</li>
+<li><strong>Maps</strong>: <code class="notranslate">maps_directions</code> reports distance and travel time, requests alternate routes, and respects departure and arrival times rather than always calculating against now. Its response shape changed, because the schema.org Trip type had nowhere to put those values.</li>
+<li><strong>Mail (28 tools) and Notes (21 tools)</strong> round out the standard build.</li>
+</ul>
+<p>Surfaces start off except Maps and Utilities, so a fresh install advertises 11 tools until you enable more during onboarding or in Settings.</p>
+<h2>Setup and settings</h2>
+<ul>
+<li><strong>Guided onboarding</strong>: a first-run sheet walks through macOS permissions, the surfaces you want, and connecting your first client.</li>
+<li><strong>Three panes instead of six</strong>: Services, Access, and Clients. Server internals and repair actions moved into a Diagnostics sheet.</li>
+<li><strong>One switch per surface</strong>: the separate per-service Remote toggle is gone. A surface you enable is reachable wherever Apple Core is currently served, and remote requests always authenticate. Access is never anonymous.</li>
+<li><strong><code class="notranslate">cloudflared</code> installs from inside the app</strong>, and Cloudflare account setup is guided instead of assumed.</li>
+</ul>
+<h2>Security</h2>
+<ul>
+<li><strong>Sparkle updated to 2.9.6</strong>, which hardens delta patching against a symbolic link at the destination path, hardens how the installer moves the download archive, and rejects package installs whose signature fails validation.</li>
+<li><strong>Query-string token authentication is removed.</strong> Simplifying the settings window took away the switch that controlled it while the server kept honoring the setting, leaving an active downgrade that nothing in the app could turn off. A bearer token in a URL leaks into server logs, proxy logs, browser history, and Referer headers, so it is gone rather than restored. Send the token in the <code class="notranslate">Authorization</code> header.</li>
+<li><strong>The filesystem gate refuses dangling symlinks</strong> at the final path component. Such a link previously read as a not-yet-created file, and the out-of-process writer downstream followed it wherever it pointed.</li>
+<li><strong>OAuth access tokens validate against the canonical <code class="notranslate">&lt;issuer&gt;/mcp</code> resource</strong> on every MCP route, so the legacy <code class="notranslate">/sse</code> and <code class="notranslate">/message</code> transports can authorize correctly.</li>
+<li><strong>Request bodies drain through a bounded reader</strong>, so an unauthenticated chunked request can no longer be buffered without limit.</li>
+<li><strong>Native clients may register reverse-domain private-use redirect URIs.</strong> Web redirects stay HTTPS-only and loopback callbacks stay local.</li>
+<li><strong>Reflected CORS responses carry <code class="notranslate">Vary: Origin</code></strong>, so a shared cache cannot answer one origin with another origin's <code class="notranslate">Access-Control-Allow-Origin</code>.</li>
+</ul>
+<h2>Fixes</h2>
+<ul>
+<li><strong>Integer arguments are accepted.</strong> JSON numbers without a decimal point decode as integers, while these tools declare a plain number, so integer coordinates were valid input that Weather rejected outright, Maps dropped region bias on, Calendar discarded proximity alarms for, and Capture replaced with defaults.</li>
+<li><strong>Starting the server stops any previous listener first</strong>, detects a bind failure, and reports it. Earlier builds could strand an orphaned port holder and show a green Running badge over a dead socket.</li>
+<li><strong>Approval dialogs are queued and shown one at a time.</strong> Concurrent clients used to overwrite each other's callbacks, dismiss each other's windows, and strand a client that could then never reconnect.</li>
+<li><strong>An approval dialog whose client gives up now resolves itself</strong>, closes, and presents whatever is queued behind it, instead of staying on screen with no live connection behind it.</li>
+<li><strong>Claude Desktop setup refuses to clobber an unreadable config.</strong> A <code class="notranslate">claude_desktop_config.json</code> that does not parse used to be replaced with an empty server map while the app promised existing servers were safe. The same protection now covers a corrupt Apple Core config.</li>
+<li><strong><code class="notranslate">messages_fetch</code> clamps its limit</strong> to a sane range, rejects a one-sided date pair instead of dropping it, and counts unread messages independently of the truncated page.</li>
+<li><strong>Calendar and Reminders creation fails loudly</strong> when the requested calendar or list does not exist or cannot be written, matching how the update paths already behaved.</li>
+<li><strong>Contact birthdays are validated when the argument arrives</strong>, rather than failing later with an opaque framework error.</li>
+<li><strong>The bundled CLI recovers a lost session</strong> by clearing the stored <code class="notranslate">Mcp-Session-Id</code> on a 404 and returning a JSON-RPC error, instead of replaying a dead session header forever.</li>
+<li><strong><code class="notranslate">shortcuts list</code> can no longer deadlock a call.</strong> Output is drained while the process terminates, under a 60 second timeout.</li>
+</ul>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key does not match the feed.</p>
+      ]]></description>
+      <pubDate>Wed, 26 Aug 2026 18:25:07 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.1.0/Apple.Core-1.1.0.zip"
+                 length="9053921"
+                 type="application/octet-stream"
+                 sparkle:edSignature="/6yOUW/iXVzql0Iv4XZwZD6ZDQBmsNcMHl8tbNWGHHZzEEO5CKBuxhAMV9BjFAaPa83IY139VvfplreTFcMdAQ==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.0.8</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.0.8</link>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.0.8</h1>
+<h2>Fixed</h2>
+<ul>
+<li>Calendar and Reminders tools now return the item's identifier. Previously <code class="notranslate">events_fetch</code>, <code class="notranslate">events_create</code>, <code class="notranslate">reminders_fetch</code>, and the other read/create tools returned objects with no id, so <code class="notranslate">events_update</code>, <code class="notranslate">events_delete</code>, <code class="notranslate">reminders_update</code>, <code class="notranslate">reminders_delete</code>, and <code class="notranslate">reminders_complete</code> — which all require an identifier — could not be used through the API. Events expose their <code class="notranslate">eventIdentifier</code> and reminders their <code class="notranslate">calendarItemIdentifier</code> (as the JSON-LD <code class="notranslate">@id</code>), matching how each tool resolves the item.</li>
+<li><code class="notranslate">calendars_list</code> and the reminder-list tool now include each calendar's identifier.</li>
+</ul>
+      ]]></description>
+      <pubDate>Thu, 13 Aug 2026 15:12:42 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.0.8/Apple.Core-1.0.8.zip"
+                 length="8745555"
+                 type="application/octet-stream"
+                 sparkle:edSignature="XxEA5yVdbhsnLtYmrJebjTuRrl+6F+7dw4bfkjMlAhdPn3LqnHMUuMvksqCEa5NTN/A79M9mhKOQ4GRFYeFMCg==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.0.7</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.0.7</link>
+      <sparkle:version>9</sparkle:version>
+      <sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.0.7</h1>
+<h2>Fixed</h2>
+<ul>
+<li>Enabling a service from the status menu no longer fails with "Apple Core could not become the active app". Activation is now re-requested while waiting and treated as best-effort, so the permission request itself always runs.</li>
+<li>When macOS refuses to display a permission dialog (the request comes back denied but no decision is recorded), Calendar, Contacts, Reminders, and Capture now report that the prompt was suppressed instead of claiming access was denied. The message points at non-default security configurations — for example <code class="notranslate">amfi_get_out_of_my_way</code> in <code class="notranslate">boot-args</code>, which marks every third-party process as a platform binary and causes macOS 26 (Tahoe) to deny consent prompts outright.</li>
+</ul>
+<h2>Notes</h2>
+<ul>
+<li>If a Mac's toggles fail with the new "macOS refused to display the permission request" message, no in-app change can help: restore the default security configuration (clear the custom <code class="notranslate">boot-args</code>, re-enable SIP) or grant access by other means, then try again.</li>
+</ul>
+      ]]></description>
+      <pubDate>Thu, 13 Aug 2026 13:56:10 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.0.7/Apple.Core-1.0.7.zip"
+                 length="8744085"
+                 type="application/octet-stream"
+                 sparkle:edSignature="xaXiChlsCZTK5ahS9kUAtaoiMIakY/tC5W67Rue/6OX6hDrQPzkDCbuPaOA8uYU54zplvtp1pMg619zhswqGCQ==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.0.6</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.0.6</link>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.0.6</h1>
+<p>Apple Core 1.0.6 makes macOS privacy prompts work from both the menu bar and Settings on a Mac with no existing grants.</p>
+<h2>Fixes</h2>
+<ul>
+<li>Apple Core now becomes a regular foreground app and waits for macOS to confirm that it is active before requesting access. Earlier builds called the permission API immediately after asking to become active, and Tahoe could deny that request without displaying a prompt.</li>
+<li>Calendar, Contacts, and Reminders now check the result of the permission request. A denied request can no longer leave the service checked and available to the MCP server.</li>
+<li>Mail and Notes now request their Automation grants when you enable the service. Messages requests Automation before guiding you through access to <code class="notranslate">chat.db</code>.</li>
+<li>Capture requests Camera, Microphone, and Screen Recording access even if one of the other grants is denied.</li>
+<li>The menu bar and Settings now update the server only after activation finishes. If macOS denies access, the switch returns to off and the server keeps the service unavailable.</li>
+</ul>
+<h2>Permission coverage</h2>
+<p>Calendar, Contacts, Location, and Reminders use their native macOS permission prompts. Maps uses the Location grant. Mail and Notes use Automation, while Messages uses Automation plus the existing database picker. Capture uses Camera, Microphone, and Screen Recording.</p>
+<p>Shortcuts and Utilities do not need a macOS privacy grant, so they enable without a permission prompt.</p>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key no longer matches the feed.</p>
+      ]]></description>
+      <pubDate>Thu, 30 Jul 2026 21:17:16 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.0.6/Apple.Core-1.0.6.zip"
+                 length="8745175"
+                 type="application/octet-stream"
+                 sparkle:edSignature="LiNoS8ZTS7kvEsQGz22But2nDMWh50PowA0pJvsVEIrtaF/0fHw5q763I5wM7gZZ6UQedB1tpQJW0lBtbumeCg==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.0.5</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.0.5</link>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.0.5</h1>
+<p>Apple Core 1.0.5 makes <code class="notranslate">/favicon.ico</code> serve a real icon file, so clients that read connector branding from the origin can actually decode it.</p>
+<h2>Fixes</h2>
+<ul>
+<li><strong><code class="notranslate">/favicon.ico</code> returns a real ICO container</strong>: the route answered with a bare 32x32 PNG body labelled <code class="notranslate">image/png</code>. The path claims an ICO container and the content type disagreed with both the path and the bytes, which strict icon resolvers reject outright. The rendered PNG is now wrapped in a genuine single-entry ICO and served as <code class="notranslate">image/x-icon</code>. Every other favicon size is unchanged.</li>
+<li><strong>The landing page advertises fewer, smaller icons</strong>: it listed all seven PNG sizes, which put a 256x256 image ahead of anything cheap. Icon resolvers take the first usable declaration, so the page now offers the ICO plus the 16 and 32 pixel PNGs. All sizes remain served for clients that request them directly.</li>
+</ul>
+<h2>Notes</h2>
+<p>These routes stay unauthenticated and unconditional, so pointing your own Cloudflare Tunnel at Apple Core vends the Apple Core logo from your own domain with no extra configuration.</p>
+<p>If your MCP client still shows a different icon after updating, the cause is likely outside Apple Core: some clients resolve a connector's icon at the registrable domain rather than the exact hostname, so a subdomain's own favicon may never be requested.</p>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key no longer matches the feed.</p>
+      ]]></description>
+      <pubDate>Thu, 30 Jul 2026 17:13:53 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.0.5/Apple.Core-1.0.5.zip"
+                 length="8733658"
+                 type="application/octet-stream"
+                 sparkle:edSignature="avXmyDjB+Ve7bucD4SzDKZY3i121rpFEXiPDLXCI/17DN1urfGR8ZxQIMEjHIpaZgCUrjgEev+Q9bZXvB0+PAw==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.0.4</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.0.4</link>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.0.4</h1>
+<p>Apple Core 1.0.4 fixes remote OAuth discovery and stops service toggles from failing silently.</p>
+<h2>Fixes</h2>
+<ul>
+<li><strong>Cloud connectors can complete OAuth</strong>: the OAuth issuer and the allowed-origin list are now both derived from the tunnel hostname. A server first configured without a hostname kept a localhost-only origin list and went on advertising an issuer of <code class="notranslate">http://localhost:8756</code> through the public tunnel, so any cloud client that read the discovery documents was sent to the user's own machine and could never finish the flow. A config written before the hostname existed now repairs itself at launch instead of only when the Cloudflare pane is opened.</li>
+<li><strong>Service toggles explain themselves</strong>: a toggle that could not be enabled reverted with no message, which was indistinguishable from a broken control. The row now shows what macOS refused.</li>
+<li><strong>Refused permission prompts are named as such</strong>: macOS reports a plain "denied" both when you click Don't Allow and when it declines to show a prompt at all. The second case is the normal one on a Mac reached over Screen Sharing, where another process holds the foreground, <code class="notranslate">tccd</code> logs "Policy disallows prompt", and nothing is written to the privacy database — so no service can ever be granted there. Apple Core now distinguishes the two and says which happened.</li>
+</ul>
+<h2>Upgrading</h2>
+<p>1.0.3 and later update automatically. Installs on 1.0.0 through 1.0.2 still need the one-time manual reinstall described in the <a href="https://github.com/oliverames/apple-core/releases/tag/v1.0.3">1.0.3 notes</a>, because their update signing key no longer matches the feed.</p>
+      ]]></description>
+      <pubDate>Thu, 30 Jul 2026 15:47:49 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.0.4/Apple.Core-1.0.4.zip"
+                 length="8732425"
+                 type="application/octet-stream"
+                 sparkle:edSignature="PUsGq48f68M8x5gYc2EYrDoQgh9Dp32q1D16XEWbgvyXjmJS5MyAQvUdOqSz3AbSmWsGl2vKOiti6fgGbZlACQ==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.0.3</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.0.3</link>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.0.3</h1>
+<p>Apple Core 1.0.3 repairs automatic updates and rebuilds Cloudflare Tunnel setup around a guided flow.</p>
+<h2>Update this release manually</h2>
+<p>The update signing key has changed. Builds from 1.0.0 through 1.0.2 carry a public key whose private half is no longer available, so they cannot validate the update feed and show "The update feed is improperly signed and could not be validated." Download 1.0.3 from <a href="https://github.com/oliverames/apple-core/releases/latest">Releases</a> and replace the app once. Automatic updates work normally from 1.0.3 onward.</p>
+<p>Earlier notes claimed this was fixed in 1.0.1. That was wrong: the feed was well-formed, but it was signed with a different key than the one shipped in the app, so no release could ever verify it.</p>
+<h2>Fixes</h2>
+<ul>
+<li><strong>Hostnames with a scheme or path are accepted</strong>: pasting <code class="notranslate">https://mcp.example.com/mcp</code> into the Cloudflare Hostname field now reduces to <code class="notranslate">mcp.example.com</code>. Previously the whole string went to <code class="notranslate">cloudflared tunnel route dns</code>, which rejected it as an invalid hostname, and the failure appeared only in the log.</li>
+<li><strong>Routing failures are visible</strong>: a DNS route that cannot be created is reported in the Cloudflare pane instead of being discarded. A tunnel that starts without routing anywhere is no longer reported as a success.</li>
+<li><strong>Tunnel status tells the truth</strong>: the pane no longer shows "Cloudflare tunnel started" beside a Stopped badge. Loading the LaunchAgent is now confirmed to have produced a running process before the app claims it started.</li>
+</ul>
+<h2>Cloudflare setup</h2>
+<ul>
+<li><strong>A Before You Start checklist</strong> shows whether <code class="notranslate">cloudflared</code> is installed and whether you are signed in to Cloudflare, with the exact command or button to fix each.</li>
+<li><strong>Log In to Cloudflare</strong> runs the browser sign-in from inside the app. Apple Core detects the resulting account certificate rather than failing later with an opaque error.</li>
+<li><strong>Set Up &amp; Start</strong> replaces Start Tunnel as the primary action, and runs the whole sequence: find or create the named tunnel, route the hostname in DNS, write the config and LaunchAgent, then start. Start Tunnel skipped DNS routing and now lives in Tunnel Actions as "Start Tunnel Only".</li>
+<li><strong>Every field explains itself</strong>, and the Hostname field shows inline why a value cannot be routed.</li>
+</ul>
+      ]]></description>
+      <pubDate>Thu, 30 Jul 2026 14:47:14 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.0.3/Apple.Core-1.0.3.zip"
+                 length="8726584"
+                 type="application/octet-stream"
+                 sparkle:edSignature="Plk7TovCLR4TBgn553dFYYt3IvhK86OFNgjukU44Bol8arQHrJp0ok5BqCDXOZUauY1i0h9nj7wLDSOi5OL1Cg==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.0.2</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.0.2</link>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.0.2</h1>
+<p>Apple Core 1.0.2 fixes three issues that affected new-machine setup and adds control over the Dock icon.</p>
+<h2>Fixes</h2>
+<ul>
+<li><strong>Duplicate menu bar items</strong>: the LaunchAgent now launches the app through <code class="notranslate">open -W</code> via LaunchServices instead of running the bare executable directly. LaunchServices deduplicates instances, so the LaunchAgent and a manual app open no longer produce two menu bar icons.</li>
+<li><strong>Service toggles not working on a new computer</strong>: the app now fronts itself before requesting macOS privacy permissions. Without this, TCC silently denied permission requests from a background-only accessory app with no visible prompt, so toggling Calendar, Contacts, Reminders, or other services did nothing.</li>
+<li><strong>Sparkle update feed error</strong>: the signed appcast was already corrected in 1.0.1; this release confirms the fix by shipping with the corrected feed configuration.</li>
+</ul>
+<h2>New</h2>
+<ul>
+<li><strong>Show Dock Icon toggle</strong>: Apple Core is now a menu-bar-only app by default (no Dock icon). A new toggle in Settings &gt; Server &gt; General lets you opt into showing the Dock icon when the app is running.</li>
+</ul>
+      ]]></description>
+      <pubDate>Thu, 23 Jul 2026 17:44:27 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.0.2/Apple.Core-1.0.2.zip"
+                 length="8676965"
+                 type="application/octet-stream"
+                 sparkle:edSignature="Z0ACspYgbsZCYCZowbKISRF35BiB14XvewSPW2LrrkWiFAZB03vl/zzMxzrhHjaYXXQOpxr3OJjTcUrOYIRMAA==" />
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.0.1</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.0.1</link>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.0.1</h1>
+<p>Apple Core 1.0.1 keeps remote MCP clients signed in after their 12-hour access token expires.</p>
+<h2>OAuth refresh tokens</h2>
+<ul>
+<li>OAuth clients now receive a refresh token with each access token. Apple Core rotates the refresh token every time it is used.</li>
+<li>Refresh tokens are bound to the client and MCP resource that received them. A token cannot be reused after rotation.</li>
+<li>Existing token files remain readable. Connections created before this release need one new sign-in because their saved records do not contain a refresh token.</li>
+</ul>
+<p>This release also adds direct tests for refresh-token rotation, persistence, client and resource binding, and private token-file permissions.</p>
+      ]]></description>
+      <pubDate>Wed, 22 Jul 2026 14:01:58 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.0.1/Apple.Core-1.0.1.zip" length="8673895" type="application/octet-stream" sparkle:edSignature="g95yQBoco0zrtzBUusJA9LSwNVAain2wYVTnvehTecjD/aWZcwQuugo9fyjc98tmUAdbsDWftkOelgBJo5NoDw=="></enclosure>
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <item>
+      <title>Version 1.0.0</title>
+      <link>https://github.com/oliverames/apple-core/releases/tag/v1.0.0</link>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+      <description><![CDATA[
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 1.0</h1>
+<p>Apple Core is a native macOS menu bar app that lets MCP clients work with Apple services on your Mac. The standard build has 77 tools for Calendar, Reminders, Contacts, Location, Maps, Messages, screen and camera capture, Shortcuts, Notes, Mail, and utility tasks.</p>
+<p>Connections use a bearer token that the app generates locally. New installs listen only on localhost. Remote access is optional, and each service stays local until you turn on its Remote toggle. If you choose to use a Cloudflare Tunnel, Apple Core creates configuration for your own Cloudflare account.</p>
+<p>The download does not contain the developer's bearer token, Cloudflare credentials, OAuth clients, Apple account data, or macOS privacy permissions. Every Mac starts with its own configuration under <code class="notranslate">~/.config/apple-core/</code> and requests access to Apple services through the normal macOS permission controls.</p>
+<p>Version 1.0 is signed with a Developer ID certificate, notarized by Apple, and distributed through a signed Sparkle update feed.</p>
+      ]]></description>
+      <pubDate>Tue, 21 Jul 2026 20:30:20 +0000</pubDate>
+      <enclosure url="https://github.com/oliverames/apple-core/releases/download/v1.0.0/Apple.Core-1.0.0.zip" length="8659081" type="application/octet-stream" sparkle:edSignature="d42F4wLicsek+rLDJi7tyjLKX9UmyXhPmhYDuodv/MYIrQTRahXrc4Z8rKTd6RfVqSBEvQ9kd06JgJmVWfuzBg=="></enclosure>
+      <sparkle:minimumSystemVersion>15.1</sparkle:minimumSystemVersion>
+    </item>
+    <!-- `Scripts/release.sh appcast` prepends signed release entries here. -->
+  </channel>
+</rss><!-- sparkle-signatures:
+edSignature: /r0c3ndeqdm0I9sxsKTpZAKUCmuX9ldcHAeqscGd7ScU7coN3WwsEhB0wqn5KAtXb70qtVkPPTn1VqDPvfLMBw==
+length: 101709
+-->
