@@ -1,0 +1,80 @@
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #1d1d1f;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 { color: #000; font-weight: 600; }
+h1 { font-size: 18px; margin: 0 0 10px 0; }
+h2 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #6e6e73;
+    margin: 18px 0 6px 0;
+}
+h3 { font-size: 13px; margin: 14px 0 6px 0; }
+p { margin: 0 0 10px 0; }
+ul, ol { padding-left: 20px; margin: 0 0 10px 0; }
+li { margin-bottom: 5px; }
+li > strong:first-child { color: #000; }
+code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    background: #f2f2f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+a { color: #0071e3; text-decoration: none; }
+a:hover { text-decoration: underline; }
+hr { border: 0; border-top: 1px solid #e5e5ea; margin: 16px 0; }
+@media (prefers-color-scheme: dark) {
+    body { color: #f5f5f7; }
+    h1, h2, h3, li > strong:first-child { color: #fff; }
+    h2 { color: #98989d; }
+    code { background: #2c2c2e; }
+    hr { border-top-color: #38383a; }
+}
+</style>
+<h1>Apple Core 2.0</h1>
+<p>Apple Core is now free for local access. No license key or activation is needed.<br>
+Existing local tokens, service permissions, shared folders, and approved clients<br>
+continue to work.</p>
+<h2>See what clients are doing</h2>
+<p>The menu shows connected clients and commands running now, described in plain<br>
+English. Recent activity shows whether a command completed or failed. Activity<br>
+stays in memory and does not store command arguments or results. Service switches<br>
+are in Settings, with a single Pause Apple Core action in the menu.</p>
+<h2>Use two Macs independently</h2>
+<p>Each Mac has its own hosted invitation and Connection ID. When settings arrive<br>
+through Migration Assistant or a restored backup, Apple Core identifies the<br>
+original Mac and offers a separate connection. It never silently takes over the<br>
+other Mac's hosted access. The invitation field has a full-width layout in<br>
+Settings and setup.</p>
+<h2>Hosted access replaces self-hosted tunnels</h2>
+<p>Remote access uses Apple Core hosting at <code class="notranslate">mcp.applecore.app</code>. Open Settings,<br>
+choose Access, select Anywhere, and enter a hosting invitation. The Mac must<br>
+remain running and connected.</p>
+<p>This update stops the old Apple Core Cloudflare background agent and removes<br>
+its plist only after confirming the agent is unloaded. If cleanup fails, the<br>
+plist stays for retry at the next launch. The retired Cloudflare API token is<br>
+removed from Keychain. The cloudflared program, remote tunnel, and DNS record<br>
+remain until you remove them. Clients using the old tunnel address need to be<br>
+connected again through Apple Core hosting.</p>
+<p>Hosting remains available by invitation. A USD 4.99 monthly hosted subscription<br>
+is planned through RevenueCat, but production checkout is not enabled in this<br>
+release. Local access is free on each Mac.</p>
+<h2>A more familiar Mac app</h2>
+<p>Settings now use native app icons for services. Shared folders support dragging<br>
+folders in, revealing them in Finder, changing write access, and removing them.<br>
+General settings expose Dock and background preferences. Window size, sidebar<br>
+width, and the last settings pane are remembered. Token rotation asks for<br>
+confirmation, and connection approval defaults to Deny.</p>
+<h2>Updates on applecore.app</h2>
+<p>Signed updates and notarized downloads are hosted on applecore.app. This release<br>
+removes the old purchase header and enables normal Sparkle update checks. Builds<br>
+1.0.0 through 1.0.2 require a manual reinstall because their old signing key does<br>
+not match the current feed.</p>
